@@ -1,6 +1,6 @@
 ﻿Console.Clear();
-Console.SetCursorPosition(10, 4);
-Console.WriteLine("+");
+// Console.SetCursorPosition(10, 4);
+// Console.WriteLine("+");
 
 int xa = 40, ya = 1,
     xb = 1, yb = 30,
@@ -18,7 +18,7 @@ Console.WriteLine("+");
 
 int x = xa, y = xb;
 
-int count = 10;
+int count = 0;
 
 while(count < 10000)
 {
@@ -28,11 +28,13 @@ while(count < 10000)
         x = (x + xa) / 2;
         y = (y + ya) / 2;
     }
+
     if(what == 1)
     {
         x = (x + xb) / 2;
         y = (y + yb) / 2;
     }
+    
     if(what == 2)
     {
         x = (x + xc) / 2;
